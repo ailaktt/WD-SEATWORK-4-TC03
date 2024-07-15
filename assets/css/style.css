@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: url('./assets/img/BARBIE BACKGROUND.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    z-index: 1;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 2rem;
+    color: #E0218A;
+    font-family: "Anton Sc";
+    transition: transform 0.5s, color 0.3s;
+    text-decoration: none;
+    margin-right: 20px; /* Adjust the space between navigation items */
+  }
+  
+  .nav-link:last-child {
+    margin-right: 0; /* Remove margin for the last item to avoid extra spacing at the end */
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    transform: translateY(-10px);
+  }
+  
+  .home-logo img {
+    width: 5rem;
+    height: auto;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .home-logo:hover img {
+    transform: scale(1.3);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    padding: 1rem;
+  }
+  
+  .content {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 1; /* Ensure the content is above the background */
+  }
+  
+  .subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: rgba(224, 33, 138, 0.5);
+    padding: 10px; /* Add some padding */
+  }
+  
+  .title {
+    font-family: "Anton Sc";
+    font-weight: 600;
+    font-size: 4.375rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    background-color: rgba(224, 33, 138, 0.5);
+    padding: 10px; /* Add some padding */
+  }
+  
+  .description {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4376rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    background-color: rgba(224, 33, 138, 0.5);
+    padding: 10px; /* Add some padding */
+  }
+  
+  .background-image {
+    position: fixed; /* Or 'absolute' if you prefer it to scroll with the page */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+    z-index: -1; /* Stay behind other content */
+  }
